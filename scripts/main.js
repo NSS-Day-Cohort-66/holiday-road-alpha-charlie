@@ -24,6 +24,10 @@ const render = async () => {
     <h3>Select Eatery</h3>
     ${eatList}
     </section>
+    <aside class ="it">
+    <h3>Saved Itineraries</h3>
+    
+    </aside>
 </article>
 <article class = "Preview"
     
