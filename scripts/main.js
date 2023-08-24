@@ -1,10 +1,11 @@
+import { displayAttractionList } from "./attractions/AttractionProvider.js";
 import { displayEateriesList } from "./eateries/EateryProvider.js";
 
 const mainContainer = document.querySelector("#container");
 
 const render = async () => {
     const eatList = await displayEateriesList()
-
+    const attractionList = await displayAttractionList()
 
     const composedHTML = `
     <header class="header">
@@ -18,7 +19,7 @@ const render = async () => {
     </section>
     <section class="attraction">
     <h3>Select Attraction</h3>
-
+    ${attractionList}
     </section>
     <section class="eatery">
     <h3>Select Eatery</h3>
