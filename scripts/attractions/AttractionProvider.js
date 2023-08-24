@@ -16,26 +16,6 @@ export const displayAttractionList = async () => {
     return html;
   };
 
-//   document.addEventListener("click", (clickEvent) => {
-      
-//       const typeClicked = clickEvent.target;
-  
-//     let detailsHtml = "";
-//     if (typeClicked.dataset.type === "attraction") {
-//     //   const itineraryPreview = typeClicked.dataset.name;
-  
-//           detailsHtml = `
-//           <div>
-//             <h4>Park Preview</h4>
-//             <p>${typeClicked.dataset.name}</p>
-//         </div>`
-        
-//       }
-//       const parentTag = document.querySelector("#Preview");
-//       parentTag.innerHTML = detailsHtml;
-    
-//   });
-
   
 document.addEventListener("change", (changeEvent) => {
     const selectElement = changeEvent.target;

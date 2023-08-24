@@ -2,7 +2,7 @@ export const displayEateriesList = async () => {
     const response = await fetch("http://holidayroad.nss.team/eateries");
     const eateries = await response.json();
   
-    let html = `<select class="eatery" id="eateries_dropdown">
+    let html = `<select data-type="eatery" class="eatery" id="eateries_dropdown">
     <option value="0">Tasty Eatery Options...</option>`;
     const divStringArray = eateries.map((eat) => {
         if (eat.ameneties.wheelchairAccessible === true) {
