@@ -27,13 +27,15 @@ const render = async () => {
     <h3>Select Eatery</h3>
     ${eatList}
     </section>
-    <aside class ="it">
+    <aside class="it">
     <h3>Saved Itineraries</h3>
     
     </aside>
 </article>
-<article class = "Preview"
-    
+<article id="Preview">
+    <div class="Preview_park"></div>
+    <div class="Preview_attraction"></div>
+    <div class="Preview_eat"></div>
 </article>
 
 
