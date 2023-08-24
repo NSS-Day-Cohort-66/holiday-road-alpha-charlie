@@ -1,0 +1,60 @@
+body {
+  background-image: url('https://images.pexels.com/photos/3804614/pexels-photo-3804614.jpeg?auto=compress&cs=tinysrgb&w=600'); /* Replace with the actual path to your image */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.it {
+  background-color: #756f6f;
+  padding: 20px; /* Adjust the padding as needed */
+  border-radius: 10px; /* Add rounded corners */
+  /* Add any other styling properties you want */
+}
+/* Center the logo and title */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #756f6f;
+    border-radius: 10px;
+  }
+  
+  /* Center the "Holiday Road" title */
+  .title {
+    margin: 20px auto 0;
+    color: rgb(8, 56, 8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow effect to text */
+    
+  }
+  
+  /* Limit width of Dropdowns to 70% and display in a flex row */
+  .Dropdowns {
+    display: flex;
+    justify-content: flex-start; /* Adjust alignment to start */
+    width: 70%;
+    margin: 20px auto 0; /* Center the content horizontally */
+  }
+  
+  /* Apply styles to each section inside the Dropdowns */
+  .Dropdowns section {
+    flex: 1; /* Distribute available space equally */
+    padding: 1rem;
+    background-color: #756f6f;
+    border: 1px solid #756f6f;
+    margin: 0 0.5rem; /* Add some spacing between sections */
+    color: rgb(8, 56, 8);
+    border-radius: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+  }
+  
+  /* Clear margin and padding of the ul element inside sections */
+  .Dropdowns section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-radius: 10px;
+  }
+  
+  /* Rest of your existing styles... */
