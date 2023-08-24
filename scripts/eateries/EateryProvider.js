@@ -3,7 +3,7 @@ export const displayEateriesList = async () => {
     const eateries = await response.json();
   
     let html = `<select class="eatery" id="eateries_dropdown">
-    <option value="0">Tasty Places</option>`;
+    <option value="0">Tasty Eatery Options...</option>`;
     const divStringArray = eateries.map((eat) => {
         if (eat.ameneties.wheelchairAccessible === true) {
 
