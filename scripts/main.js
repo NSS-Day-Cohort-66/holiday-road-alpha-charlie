@@ -1,7 +1,9 @@
+import { displayEateriesList } from "./eateries/EateryProvider.js";
+
 const mainContainer = document.querySelector("#container");
 
-const render = () => {
-
+const render = async () => {
+    const eatList = await displayEateriesList()
 
 
     const composedHTML = `
@@ -20,7 +22,7 @@ const render = () => {
     </section>
     <section class="eatery">
     <h3>Select Eatery</h3>
-
+    ${eatList}
     </section>
 </article>
 <article class = "Preview"
