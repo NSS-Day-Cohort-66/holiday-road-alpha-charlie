@@ -59,7 +59,7 @@ document.addEventListener("click", async (clickEvent) => {
       <p>...</p>`;
 
     // Display the  details
-    const parentTag = document.querySelector(".details");
+    const parentTag = document.querySelector(".Preview_attraction");
     parentTag.innerHTML = detailsHtml;
   }
 });
