@@ -39,13 +39,14 @@ const render = async () => {
     </aside>
 </article>
 
-<article class ="Preview">
+<article id="Preview">
 <h3>Previewed Selections<h3>
+<div class="previewDetails">
     <h5>(Please read and verify all selections before saving. Click the Details to see more information on your selections)<h5>
     <div class="Preview_park"></div>
     <div class="Preview_attraction"></div>
     <div class="Preview_eat"></div>
-
+  </div>
 </article>
 
 

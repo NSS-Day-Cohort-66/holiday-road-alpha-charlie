@@ -6,6 +6,13 @@ body {
   
 }
 
+h3 {
+    text-align: center;
+    color: rgb(8, 56, 8);
+    
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    -webkit-text-stroke: 0.5px black;
+}
 
 .it {
   background-color: #756f6f;
@@ -59,16 +66,9 @@ body {
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
     -webkit-text-stroke: 0.5px black;
   }
-  
-  /* Clear margin and padding of the ul element inside sections */
-  .Dropdowns section ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border-radius: 10px;
-  }
+ 
 
-  .Preview {
+  #Preview {
     background-color: #756f6f;
     border-radius: 10px;
     margin: 20px auto 0;
@@ -83,6 +83,11 @@ body {
     border-radius: 10px;
     display: flex;
     justify-content: center;
+  }
+
+  .previewDetails {
+    flex: 1;
+    justify-content:space-between;
   }
   
   /* Rest of your existing styles... */
