@@ -49,8 +49,8 @@ h3 {
   /* Limit width of Dropdowns to 70% and display in a flex row */
   .Dropdowns {
     display: flex;
-    justify-content: flex-start; /* Adjust alignment to start */
-    width: 70%;
+    /* justify-content: flex-start; Adjust alignment to start */
+
     margin: 20px auto 0; /* Center the content horizontally */
   }
   
@@ -88,6 +88,9 @@ h3 {
   .previewDetails {
     flex: 1;
     justify-content:space-between;
+    flex-direction: column;
+    border: 5px;
+    border-color: blue;
   }
   
   /* Rest of your existing styles... */
