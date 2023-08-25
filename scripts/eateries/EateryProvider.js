@@ -27,7 +27,7 @@ export const displayEateriesList = async () => {
         <div>
           <h4>Eatery Preview</h4>
           <p>${eateryName}</p>
-          <div></div>
+          <article><div><button class="details">Details</button></div></article>
         </div>`;
   
       const parentTag = document.querySelector(".Preview_eat");
