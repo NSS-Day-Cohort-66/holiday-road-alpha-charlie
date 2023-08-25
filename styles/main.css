@@ -44,6 +44,7 @@ h3 {
     color: rgb(8, 56, 8);
     -webkit-text-stroke: 2px black; /* Adjust the shadow values */
     text-shadow: 7px 7px 7px #756f6f;
+    text-align: center;
   }
   
   /* Limit width of Dropdowns to 70% and display in a flex row */
@@ -73,8 +74,8 @@ h3 {
     border-radius: 10px;
     margin: 20px auto 0;
     border: 3px solid #131212;
-    display:flex;
-    justify-content:center;
+    display:inline-flex;
+    justify-content:space-evenly;
     
 
   }
@@ -86,11 +87,8 @@ h3 {
   }
 
   .previewDetails {
-    flex: 1;
     justify-content:space-between;
     flex-direction: column;
-    border: 5px;
-    border-color: blue;
   }
   
   /* Rest of your existing styles... */
