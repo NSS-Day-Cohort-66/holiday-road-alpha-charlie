@@ -57,7 +57,9 @@ export const displayParksList = async () => {
   let parkId = 1;
 
   const divStringArray = parksList.map((obj) => {
-    html += `<option value=${parkId++}>${obj.fullName}</option>`;
+    html += `<option value=${parkId++} data-name="${obj.fullName}">${
+      obj.fullName
+    }</option>`;
   });
   html += divStringArray.join("");
 
@@ -70,11 +72,11 @@ document.addEventListener("change", (changeEvent) => {
 
   if (selectElement.dataset.type === "parks") {
     const selectedOption = selectElement.options[selectElement.selectedIndex];
-    const parkName = selectedOption.dataset.park;
+    const parkName = selectedOption.dataset.name;
 
     let detailsHtml = `
       <div>
-        <h4>Eatery Preview</h4>
+        <h4>Park Preview</h4>
         <p>${parkName}</p>
         <article><div><button class="details">Details</button></div></article>
       </div>`;
