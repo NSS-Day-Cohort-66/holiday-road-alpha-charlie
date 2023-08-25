@@ -57,7 +57,9 @@ export const displayParksList = async () => {
   let parkId = 1;
 
   const divStringArray = parksList.map((obj) => {
-    html += `<option value=${parkId++}>${obj.fullName}</option>`;
+    html += `<option value=${parkId++} data-name="${obj.fullName}">${
+      obj.fullName
+    }</option>`;
   });
   html += divStringArray.join("");
 
@@ -70,14 +72,44 @@ document.addEventListener("change", (changeEvent) => {
 
   if (selectElement.dataset.type === "parks") {
     const selectedOption = selectElement.options[selectElement.selectedIndex];
-    const parkName = selectedOption.dataset.park;
+    const parkName = selectedOption.dataset.name;
 
     let detailsHtml = `
       <div>
-        <h4>Eatery Preview</h4>
+        <h4>Park Preview</h4>
         <p>${parkName}</p>
-        <article><div><button class="details">Details</button></div></article>
+        <article><div><button id="parkDetails" class="details" data-name="${parkName}">Details</button></div></article>
       </div>`;
+
+    const parentTag = document.querySelector(".Preview_park");
+    parentTag.innerHTML = detailsHtml;
+  }
+});
+
+document.addEventListener("click", async (click) => {
+  if (click.target.id === "parkDetails") {
+    const response = await fetch(
+      "https://developer.nps.gov/api/v1/parks?&limit=500&start=0&api_key=fhlPVqRToDHdLIZ2OAHqEbB1CyLHNZGYa5hz2Go2"
+    );
+    const parksResponse = await response.json();
+    const allParks = await parksResponse.data;
+
+    const selectedPark = allParks.find(
+      (park) => park.fullName === click.target.dataset.name
+    );
+
+    console.log(selectedPark);
+
+    let detailsHtml = `
+      <h4>Park Details</h4>
+      <p>Name: ${selectedPark.fullName}</p>
+      <p>Description: ${selectedPark.description}</p>
+      <p>Location: ${selectedPark.addresses[0].city}, ${selectedPark.addresses[0].stateCode}</p>
+      <p>Wheelchair Accessible: Yes</p>
+      <p>Cellular Signal: Yes</p>
+      <p>Scenic Views/Photo Spot: Yes</p>
+      <p>Information - Ranger/Staff Member Present: Yes</p>
+      `;
 
     const parentTag = document.querySelector(".Preview_park");
     parentTag.innerHTML = detailsHtml;
