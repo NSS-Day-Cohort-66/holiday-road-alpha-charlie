@@ -17,7 +17,7 @@ document.addEventListener("change", (changeEvent) => {
       <div>
         <h4>Eatery Preview</h4>
         <p>${parkName}</p>
-        <div></div>
+        <article><div><button class="details">Details</button></div></article>
       </div>`;
 
     const parentTag = document.querySelector(".Preview_park");
