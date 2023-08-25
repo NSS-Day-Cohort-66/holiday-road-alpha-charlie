@@ -63,7 +63,7 @@ document.addEventListener("click", async (clickEvent) => {
     </section>`;
 
     // Display the eatery details
-    const parentTag = document.querySelector(".details-button");
+    const parentTag = document.querySelector(".Preview_eat");
     parentTag.innerHTML = detailsHtml;
   }
 });

@@ -89,6 +89,7 @@ h3 {
   .previewDetails {
     display: flex;
     flex: auto;
+    text-align: center;
     justify-content:space-between;
     flex-direction: row;
   }
@@ -96,6 +97,4 @@ h3 {
   
   /* Rest of your existing styles... */
 
-  button.details-button {
-    width: 33%;
-  }
+  

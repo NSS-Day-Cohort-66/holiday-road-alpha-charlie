@@ -39,12 +39,12 @@ const render = async () => {
 
 <h1 class="title">Previewed Selections</h1>
 <article id="Preview">
-
 <div class="previewDetails">
-    <div class="Preview_park"></div>
-    <div class="Preview_attraction"></div>
-    <div class="Preview_eat"></div>
-  </div>
+<div class="Preview_park"></div>
+<div class="Preview_attraction"></div>
+<div class="Preview_eat"></div>
+</div>
+
 </article>
 
 
