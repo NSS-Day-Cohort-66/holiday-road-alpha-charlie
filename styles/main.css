@@ -87,8 +87,9 @@ h3 {
   }
 
   .previewDetails {
+    display: flex;
     justify-content:space-between;
-    flex-direction: column;
+    flex-direction: row;
   }
   
   /* Rest of your existing styles... */
