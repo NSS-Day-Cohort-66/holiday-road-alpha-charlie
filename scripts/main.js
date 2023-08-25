@@ -1,12 +1,20 @@
 import { displayAttractionList } from "./attractions/AttractionProvider.js";
 import { displayEateriesList } from "./eateries/EateryProvider.js";
+
+
 import { saveButton } from "./saveITbutton.js";
+
+
 
 const mainContainer = document.querySelector("#container");
 
 const render = async () => {
     const eatList = await displayEateriesList()
+    
+    
     const attractionList = await displayAttractionList()
+    
+    
     const saveBTN = saveButton()
     const composedHTML = `
     <header class = "pic">

@@ -1,7 +1,9 @@
 body {
-  background-image: url('https://c1.wallpaperflare.com/preview/727/58/428/pavement-marking-yellow-line-wet-pavement-snow.jpg'); /* Replace with the actual path to your image */
+  background-image: url('https://media.istockphoto.com/id/1178543492/photo/empty-country-roads-english-countryside.webp?b=1&s=170667a&w=0&k=20&c=ROsW7GuLBQKZI0Ko-8pc5pHFmUIfnQcLRzUax2K-1Og=');
   background-size: cover; /* Ensure the image covers the entire background */
   background-repeat: no-repeat; /* Prevent the image from repeating */
+  
+  
 }
 
 
@@ -28,10 +30,10 @@ body {
     
   }
   
-  /* Center the "Holiday Road" title */
+ 
   .title {
     margin: 20px auto 0;
-    font-size: 5.5rem; /* Adjust the font size as needed */
+    font-size: 4.5rem; /* Adjust the font size as needed */
     color: rgb(8, 56, 8);
     -webkit-text-stroke: 2px black; /* Adjust the shadow values */
     text-shadow: 7px 7px 7px #756f6f;
@@ -54,7 +56,8 @@ body {
     margin: 0 0.5rem; /* Add some spacing between sections */
     color: rgb(8, 56, 8);
     border-radius: 10px;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3)
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+    -webkit-text-stroke: 0.5px black;
   }
   
   /* Clear margin and padding of the ul element inside sections */
