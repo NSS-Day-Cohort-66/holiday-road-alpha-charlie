@@ -52,13 +52,15 @@ document.addEventListener("click", async (clickEvent) => {
 
     // Generate the HTML for eatery details in a similar format
     let detailsHtml = `
+    <section class="detailClick">
       <h4>Eatery Details</h4>
       <p>Name: ${selectedEatery.businessName}</p>
       <p>Description: ${selectedEatery.description}</p>
       <p>Location: ${selectedEatery.city}, ${selectedEatery.state}</p>
       <p>Wheelchair Accessible: ${selectedEatery.ameneties.wheelchairAccessible ? "Yes" : "No"}</p>
       <p>Wi-Fi: ${selectedEatery.ameneties.wifi ? "Available" : "Not Available"}</p>
-      <p>...</p>`;
+      <p>...</p>
+    </section>`;
 
     // Display the eatery details
     const parentTag = document.querySelector(".details-button");

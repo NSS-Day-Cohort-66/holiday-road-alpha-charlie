@@ -39,7 +39,7 @@ const render = async () => {
 
 <h1 class="title">Previewed Selections</h1>
 <article id="Preview">
-<h5>(Please read and verify all selections before saving. Click the Details to see more information on your selections)<h5>
+
 <div class="previewDetails">
     <div class="Preview_park"></div>
     <div class="Preview_attraction"></div>

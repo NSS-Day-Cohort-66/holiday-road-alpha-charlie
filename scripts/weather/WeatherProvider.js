@@ -1,0 +1,1 @@
+api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={daed6fc3930d51f6c345473e61179639}

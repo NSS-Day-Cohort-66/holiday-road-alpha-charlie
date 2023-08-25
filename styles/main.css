@@ -88,8 +88,14 @@ h3 {
 
   .previewDetails {
     display: flex;
+    flex: auto;
     justify-content:space-between;
     flex-direction: row;
   }
   
+  
   /* Rest of your existing styles... */
+
+  button.details-button {
+    width: 33%;
+  }

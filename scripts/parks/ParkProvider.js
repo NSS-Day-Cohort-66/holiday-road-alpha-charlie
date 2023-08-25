@@ -83,3 +83,4 @@ document.addEventListener("change", (changeEvent) => {
     parentTag.innerHTML = detailsHtml;
   }
 });
+
