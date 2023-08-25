@@ -6,14 +6,12 @@ import { saveButton } from "./saveITbutton.js";
 const mainContainer = document.querySelector("#container");
 
 const render = async () => {
-    const eatList = await displayEateriesList() 
-    const attractionList = await displayAttractionList()
-    const saveBTN = saveButton()
-    const parkList = displayParksList()
+  const eatList = await displayEateriesList();
+  const attractionList = await displayAttractionList();
+  const saveBTN = saveButton();
+  const parkList = await displayParksList();
 
-    
-
-    const composedHTML = `
+  const composedHTML = `
     <header class = "pic">
     <img src="https://cdn-icons-png.flaticon.com/128/2913/2913520.png" />
     </header>
