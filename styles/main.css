@@ -1,14 +1,22 @@
 body {
-  background-image: url('https://images.pexels.com/photos/3804614/pexels-photo-3804614.jpeg?auto=compress&cs=tinysrgb&w=600'); /* Replace with the actual path to your image */
+  background-image: url('https://c1.wallpaperflare.com/preview/727/58/428/pavement-marking-yellow-line-wet-pavement-snow.jpg'); /* Replace with the actual path to your image */
   background-size: cover; /* Ensure the image covers the entire background */
   background-repeat: no-repeat; /* Prevent the image from repeating */
 }
+
 
 .it {
   background-color: #756f6f;
   padding: 20px; /* Adjust the padding as needed */
   border-radius: 10px; /* Add rounded corners */
+  border: 3px solid #131212;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3)
   /* Add any other styling properties you want */
+}
+.pic {
+  display: flex;
+  
+  
 }
 /* Center the logo and title */
 
@@ -17,16 +25,16 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background-color: #756f6f;
-    border-radius: 10px;
+    
   }
   
   /* Center the "Holiday Road" title */
   .title {
     margin: 20px auto 0;
+    font-size: 5.5rem; /* Adjust the font size as needed */
     color: rgb(8, 56, 8);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow effect to text */
-    
+    -webkit-text-stroke: 2px black; /* Adjust the shadow values */
+    text-shadow: 7px 7px 7px #756f6f;
   }
   
   /* Limit width of Dropdowns to 70% and display in a flex row */
@@ -42,11 +50,11 @@ body {
     flex: 1; /* Distribute available space equally */
     padding: 1rem;
     background-color: #756f6f;
-    border: 1px solid #756f6f;
+    border: 3px solid #131212;
     margin: 0 0.5rem; /* Add some spacing between sections */
     color: rgb(8, 56, 8);
     border-radius: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3)
   }
   
   /* Clear margin and padding of the ul element inside sections */
@@ -55,6 +63,23 @@ body {
     padding: 0;
     list-style: none;
     border-radius: 10px;
+  }
+
+  .Preview {
+    background-color: #756f6f;
+    border-radius: 10px;
+    margin: 20px auto 0;
+    border: 3px solid #131212;
+    display:flex;
+    justify-content:center;
+    
+
+  }
+  .Savebutton {
+    
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
   }
   
   /* Rest of your existing styles... */
